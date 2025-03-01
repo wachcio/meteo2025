@@ -1,0 +1,39 @@
+.error-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.error-container h3 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.error-container p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+.error-refresh {
+  background-color: #004275;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.error-refresh:hover {
+  background-color: #003366;
+}

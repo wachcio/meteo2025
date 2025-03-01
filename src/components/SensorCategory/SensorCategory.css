@@ -1,0 +1,95 @@
+/* src/components/SensorCategory/SensorCategory.css */
+.sensor-category {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.category-title {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-weight: normal;
+}
+
+.sensors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* src/components/SensorCard/SensorCard.css */
+.sensor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.sensor-name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sensor-image-container {
+  width: 120px;
+  height: 120px;
+  background-color: #004275; /* Ciemniejszy niebieski */
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sensor-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.sensor-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-value {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.max-value,
+.min-value {
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.arrow-up {
+  color: red;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.arrow-down {
+  color: #00ccff; /* Jasny niebieski */
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.value-text {
+  font-size: 0.9rem;
+}

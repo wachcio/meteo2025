@@ -1,0 +1,88 @@
+/* src/components/SensorCard/SensorCard.css */
+.sensor-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  border-left: 3px solid transparent;
+}
+
+.sensor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.sensor-card.stale {
+  border-left: 3px solid #f44336;
+}
+
+.sensor-card.alarm-min {
+  border-left: 3px solid #2196f3; /* Niebieski dla alarmu minimalnego */
+}
+
+.sensor-card.alarm-max {
+  border-left: 3px solid #ff9800; /* Pomarańczowy dla alarmu maksymalnego */
+}
+
+.sensor-icon {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sensor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sensor-emoji {
+  font-size: 2rem;
+}
+
+.sensor-info {
+  flex: 1;
+}
+
+.sensor-name {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.sensor-value {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 480px) {
+  .sensor-card {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  .sensor-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .sensor-name {
+    font-size: 0.8rem;
+  }
+
+  .sensor-value {
+    font-size: 1rem;
+  }
+}

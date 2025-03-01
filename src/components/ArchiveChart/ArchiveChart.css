@@ -1,0 +1,35 @@
+.chart-container {
+  background-color: #004275;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.chart-title {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.chart-content {
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chart-container.empty {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-data {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
